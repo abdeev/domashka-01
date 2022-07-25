@@ -1,172 +1,331 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Студія</title>
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/sprite-styles.css" />
+    <title>practice HTML</title>
   </head>
-
   <body>
-    <!-- верхнє меню -->
-    <header>
-      <!-- логотип -->
-      <a href="./index.html">Web<span>Studio</span></a>
-
+    <header class="header container">
+      <!-- logo -->
+      <a href="./index.html" class="logo">Product</a>
+      <!-- navigation block -->
       <nav>
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./index.html">Портфоліо</a></li>
-          <li><a href="./index.html">Контакти</a></li>
+        <ul class="navigation">
+          <li class="nav-item"><a href="" class="link">Product</a></li>
+          <li class="nav-item"><a href="" class="link">Pricing</a></li>
+          <li class="nav-item"><a href="" class="link">Customers</a></li>
+          <li class="nav-item"><a href="" class="link">Resources</a></li>
         </ul>
       </nav>
-
-      <!-- контакти mailto phoneto-->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com></a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <!-- registration block -->
+      <ul class="reg">
+        <li><button class="signin-btn" type="button">Sign In</button></li>
+        <li><button class="signup-btn" type="button">Sign Up</button></li>
       </ul>
+      <!-- switcher day-night -->
+      <button type="button">sw</button>
     </header>
-
     <main>
-      <!-- шапка -->
-      <section>
-        <div>
-          <h1>Еффективні рішення для вашого бізнесу</h1>
+      <!-- SECTION HERO -->
+      <section class="section">
+        <div class="container hero">
+          <div class="hero-text">
+            <h1>Work at the speed of thought</h1>
+            <p class="herotext">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <button type="button">Get started</button>
+            <a href="">Watch the Video</a>
+          </div>
+          <img
+            src="./images/graphics/hero-img-1.svg"
+            alt="Smarphone that communicate people"
+            width="610"
+          />
         </div>
-        <button type="button"><span>Замовити послугу</span></button>
       </section>
-      <!-- наші особливості -->
-      <section>
-        <h2>особливості</h2>
+      <!-- SECTION FEATURES -->
+      <section class="section features">
+        <div class="container">
+          <h2 class="hdr-ftrs">Product was Built Specifically for You</h2>
+          <ul class="list-features">
+            <li class="card-features">
+              <svg class="icon arrow" width="54" height="54">
+                <use
+                  href="./images/graphics/icons-features.svg#icon-Arrow"
+                ></use>
+              </svg>
+              <h3>First click tests</h3>
+              <p>While most people enjoy casino gambling,</p>
+            </li>
+            <li class="card-features">
+              <svg class="icon design" width="54" height="54">
+                <use
+                  href="./images/graphics/icons-features.svg#icon-Design"
+                ></use>
+              </svg>
+              <h3>Design surveys</h3>
+              <p>Sports betting, lottery and bingo playing for the fun</p>
+            </li>
+            <li class="card-features">
+              <svg class="icon heart" width="54" height="54">
+                <use
+                  href="./images/graphics/icons-features.svg#icon-Heart"
+                ></use>
+              </svg>
+              <h3>Preference tests</h3>
+              <p>The Myspace page defines the individual.</p>
+            </li>
+            <li class="card-features">
+              <svg class="icon watch" width="54" height="54">
+                <use
+                  href="./images/graphics/icons-features.svg#icon-Watch"
+                ></use>
+              </svg>
+              <h3>Five second tests</h3>
+              <p>Personal choices and the overall personality of the person.</p>
+            </li>
+          </ul>
+          <button class="btn-signup" type="button">SignUp now</button>
+        </div>
+      </section>
+      <!-- SECTION PROPERTIES -->
+      <section class="managment">
+        <h2><span>Effortless Validation for</span> Management</h2>
+        <p>
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
+        </p>
         <ul>
           <li>
-            <h3>Увага до деталей</h3>
+            <h3>Accessory makers</h3>
             <p>
-              Ідейні міркування, а також початок повсякденної роботи з
-              формування позиції.
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
             </p>
           </li>
-
           <li>
-            <h3>Пунктуальність</h3>
+            <h3>Alterationists</h3>
             <p>
-              Завдання організації, особливо ж рамки і місце навчання кадрів
-              спричиняє.
-            </p>
-          </li>
-
-          <li>
-            <h3>Планування</h3>
-            <p>Також консультація з широким активом значною мірою зумовлює.</p>
-          </li>
-
-          <li>
-            <h3>Сучасні технології</h3>
-            <p>
-              Значущість цих проблем настільки очевидна, що реалізація планових
-              завдань.
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
             </p>
           </li>
         </ul>
+        <img src="" alt="" />
+      </section>
+      <section class="customer support">
+        <h2><span>Easier decision making for</span> Customer Support</h2>
+        <p>
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
+        </p>
+        <ul>
+          <li>
+            <p>Never worry about overpaying for your energy again.</p>
+          </li>
+          <li>
+            <p>
+              We will only switch you to energy companies that we trust and will
+              treat you right
+            </p>
+          </li>
+          <li>
+            <p>We track the markets daily and know where the savings are.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="Collaborative">
+        <h2><span>Optimisation for</span> Collaborative</h2>
+        <p>
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
+        </p>
+        <ul>
+          <li>
+            <h3>Accessory makers</h3>
+            <p>
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
+            </p>
+          </li>
+          <li>
+            <h3>Alterationists</h3>
+            <p>
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+          </li>
+        </ul>
+        <img src="" alt="" />
       </section>
 
-      <!-- чим ми займаємось -->
-      <section>
-        <h2>Чим ми займаємося</h2>
+      <!-- SECTION TEAM -->
+      <section class="team">
+        <h2>Quick & Easy Process</h2>
+        <p>
+          Do you require some help for your project: Conception workshop,
+          prototyping, marketing strategy, landing page, Ux/UI?
+        </p>
         <ul>
           <li>
-            <img
-              src="./images/our_work/desktop.jpg"
-              alt="Desktop applications"
-              width="370"
-            />
+            <img src="#" alt="Avatar photo" width="98" height="98" />
+            <p>I can take care of your pitch</p>
           </li>
           <li>
-            <img
-              src="./images/our_work/ipad.jpg"
-              alt="Tablet applications"
-              width="370"
-            />
+            <img src="#" alt="Avatar photo" width="98" height="98" />
+            <p>I can prototype your app</p>
           </li>
           <li>
-            <img
-              src="./images/our_work/phone.jpg"
-              alt="Smartphone applications"
-              width="370"
-            />
+            <img src="#" alt="Avatar photo" width="98" height="98" />
+            <p>I can take care of your pitch</p>
+          </li>
+          <li>
+            <img src="#" alt="Avatar photo" width="98" height="98" />
+            <p>I can help marketing strategy</p>
+          </li>
+        </ul>
+        <button type="button">Contact our expert</button>
+      </section>
+      <!-- SECTION NEWS -->
+      <section class="news">
+        <h2>Contents Strategies</h2>
+        <p>
+          We focus on ergonomics and meeting you where you work. It's only a
+          keystroke away.
+        </p>
+        <ul>
+          <li class="card-news">
+            <img src="#" alt="Working process with laptops" />
+            <p>By Wahid Ari | 03 March 2019</p>
+            <h3>Increasing Prosperity With Positive Thinking</h3>
+          </li>
+          <li class="card-news">
+            <img src="#" alt="Offline meeting in office" />
+            <p>By Wahid Ari | 03 March 2019</p>
+            <h3>Motivation Is The First Step To Success</h3>
+          </li>
+          <li class="card-news">
+            <img src="#" alt="View of city skyscrapers" />
+            <p>By Wahid Ari | 03 March 2019</p>
+            <h3>Success Steps For Your Personal Or Business</h3>
           </li>
         </ul>
       </section>
-
-      <!-- наша команда -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/team/igordemianenko.jpg"
-              alt="Фото Ігор Дем'яненко"
-              width="270"
-            />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+      <!-- SECTION PRICE PLANS -->
+      <section class="price">
+        <h2>Price Table</h2>
+        <p>We offer competitive price</p>
+        <ul class="list-price">
+          <li class="card-price">
+            <div>
+              <h3 class="header">Free</h3>
+              <p>Brief price description</p>
+              <ul>
+                <li>
+                  <p>0</p>
+                </li>
+                <li>
+                  <p>$</p>
+                  <p>Per / month</p>
+                </li>
+              </ul>
+              <p>Only 2 Operators</p>
+              <p>Notifications</p>
+              <p>Landing Pages</p>
+              <button type="button">Order Now</button>
+            </div>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <img
-              src="./images/team/olgarepina.jpg"
-              alt="Фото Ольга Репіна"
-              width="270"
-            />
-            <h3>Ольга Репіна</h3>
-            <p>Frontend Developer</p>
+          <li class="card-price">
+            <h3>Standard</h3>
+            <p>Brief price description</p>
+            <ul>
+              <li>
+                <p>5</p>
+              </li>
+              <li>
+                <p>$</p>
+                <p>Per / month</p>
+              </li>
+            </ul>
+            <p>5+ Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+            <button type="button">Order Now</button>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <img
-              src="./images/team/nikolaitarasov.jpg"
-              alt="Фото Микола Тарасов"
-              width="270"
-            />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img
-              src="./images/team/mikhailermakov.jpg"
-              alt="Фото Михайло Єрмаков"
-              width="270"
-            />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+          <li class="card-price">
+            <h3>Premium</h3>
+            <p>Brief price description</p>
+            <ul>
+              <li>
+                <p>10</p>
+              </li>
+              <li>
+                <p>$</p>
+                <p>Per / month</p>
+              </li>
+            </ul>
+            <p>10+ Operators</p>
+            <p>Notifications</p>
+            <p>Landing Pages</p>
+            <button type="button">Order Now</button>
           </li>
         </ul>
       </section>
+      <!-- SECTION FEEDBACK -->
+      <section class="feedback"></section>
+      <div class="promo"></div>
     </main>
-
-    <!-- підвал -->
-    <footer>
-      <!-- логотип -->
-      <a href="./index.html">Web<span>Studio</span></a>
-
-      <!-- зворотня адреса -->
-      <address>
-        <ul>
-          <li>
-            <a
-              href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+    <footer class="ftr">
+      <!-- logo -->
+      <a href="./index.html" class="logo">Product</a>
+      <!-- social links -->
+      <ul class="list social">
+        <li class="link-insta"><a href=""></a></li>
+        <li class="link-facebook"><a href=""></a></li>
+        <li class="link-twitter"><a href=""></a></li>
+      </ul>
+      <!-- recources links -->
+      <h3>Resource</h3>
+      <ul class="list resource">
+        <li class="link"><a href="">About Us</a></li>
+        <li class="link"><a href="">Blog</a></li>
+        <li class="link"><a href="">Contact</a></li>
+        <li class="link"><a href="">FAQ</a></li>
+      </ul>
+      <!-- LEGAL links -->
+      <h3>Legal Stuff</h3>
+      <ul class="list legal">
+        <li><a href="">Disclaimer</a></li>
+        <li><a href="">Financing</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Service</a></li>
+      </ul>
+      <!-- SUBSCRIBE -->
+      <div class="subscribe">
+        <h3>knowing you're always on the best energy deal.</h3>
+        <form name="signup-form">
+          <label for="mail">
+            Email
+            <input type="email" name="email" />
+          </label>
+          <button type="submit">Sign up Now</button>
+        </form>
+      </div>
+      <p>Made With Love By Figmaland All Right Reserved</p>
     </footer>
   </body>
 </html>

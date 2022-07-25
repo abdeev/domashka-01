@@ -1,0 +1,14 @@
+.icon {
+  fill: currentColor;
+}
+.icon-envelop {
+  width: 16px;
+  padding: 5px;
+}
+.icon-envelop:hover {
+  fill: white;
+}
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}
